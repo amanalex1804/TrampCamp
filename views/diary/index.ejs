@@ -1,0 +1,11 @@
+<h1> Done by <%= diary.author.username %></h1>
+
+<h3> <%= diary.description %> </h3>
+
+<a href="/writings_in_which/diary/<%= diary._id %>/edit"> EDIT </a>
+
+<form action = "/writings_in_which/diary/<%= diary._id %>?_method=DELETE" method="POST" >
+<button>Delete </button>
+</form>
+
+<a href="/writings_in_which/diary">Back</a>

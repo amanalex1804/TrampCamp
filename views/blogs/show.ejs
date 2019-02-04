@@ -1,0 +1,12 @@
+<% blogs.forEach(function(blogs){ %>
+  <h1> <%= blogs.link %></h1>
+
+<h1><%= blogs.description %></h1>
+
+
+<a href="/writings_in_which/blogs/<%= blogs._id %>">MORE INFO </a>
+
+<% }); %>
+
+
+<a href="/writings_in_which/blogs/new">New</a>

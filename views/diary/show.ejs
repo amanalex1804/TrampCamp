@@ -1,0 +1,12 @@
+<% diary.forEach(function(diary){ %>
+  <h1> <%= diary.date %></h1>
+
+<h1><%= diary.description %></h1>
+
+
+<a href="/writings_in_which/diary/<%= diary._id %>">MORE INFO </a>
+
+<% }); %>
+
+
+<a href="/writings_in_which/diary/new">New</a>

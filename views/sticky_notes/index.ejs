@@ -1,0 +1,13 @@
+
+<h1> Done by <%= sticky_notes.author.username %> </h1>
+
+<h3> <%= sticky_notes.description %> </h3>
+
+<a href="/writings_in_which/sticky_notes/<%= sticky_notes._id %>/edit">EDIT </a>
+
+
+<form action = "/writings_in_which/sticky_notes/<%= sticky_notes._id %>?_method=DELETE" method="POST" >
+<button>Delete </button>
+</form>
+
+<a href="/writings_in_which/sticky_notes">Back</a>

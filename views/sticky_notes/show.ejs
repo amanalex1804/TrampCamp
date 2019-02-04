@@ -1,0 +1,13 @@
+
+<% sticky_notes.forEach(function(sticky_notes){ %>
+
+<h1> <%= sticky_notes.description %> </h1>
+
+<a href="/writings_in_which/sticky_notes/<%= sticky_notes._id %>" >MORE INFO </a>
+
+
+<% }); %>
+
+<a href="/writings_in_which/sticky_notes/new"> New </a>
+
+<a href="/writings_in_which">Back</a>
